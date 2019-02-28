@@ -1,1 +1,1 @@
-# K-Nearest Neighbors algorithm
+# K-Nearest Neighbors classifier
