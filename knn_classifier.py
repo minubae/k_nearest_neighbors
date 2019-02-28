@@ -17,10 +17,21 @@ data = vec(data)
 # print(data.shape)
 # print(data)
 # print(data[0:5,2:4])
-data_train = data[0:50,2:]
-print(data_train)
+# data_train = data[0:10,2:]
+data = data[0:15,:]
+n = len(data)
+print(data)
+print(n)
 print('')
+k_fold = 3
 
+for i in range(0, n, k_fold):
+    print(i)
+    print(data[i:i+k_fold])
+
+
+
+'''
 k = 5
 counter = 0
 n = len(data_train)
@@ -66,3 +77,4 @@ for index in knn_indices:
 
     print(index)
     print(data_train[index])
+'''
