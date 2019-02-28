@@ -119,7 +119,6 @@ def get_missclassification_error(k_num, k_fold, collected_data):
     total_correct = sum(corr_count)
     denom = (n/kf)*(K*kf)
     miss_classification_error = 1 - (total_correct / denom)
-
     # print(total_correct)
     # print(denom)
     print('error rate: ', miss_classification_error)
@@ -131,13 +130,12 @@ def main(input1, input2, data_matrix):
     import matplotlib.pyplot as plt
     import matplotlib.ticker as mticker
 
+    K_vec = []
+    miss_classification_vec = []
+
     data_mat =data_matrix
     k_input = input1
     k_fold_input = input2
-
-    miss_classification_vec = []
-    K_vec = []
-
     loop_num = 40
 
     for K in range(1, loop_num, 2):
@@ -162,11 +160,6 @@ def main(input1, input2, data_matrix):
     plt.xlabel('The number of Neighbors K')
     plt.ylabel('Missclassification Error')
     plt.show()
-
-
-
-
-
 
 if __name__ == '__main__':
 
