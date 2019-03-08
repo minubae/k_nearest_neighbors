@@ -9,16 +9,8 @@ import numpy as np
 import pandas as pd
 from itertools import combinations
 from numpy.linalg import norm
-from numpy import sum
-from numpy import append
-from numpy import delete
-from numpy import sort
 from numpy import array as vec
-from numpy import argpartition
-from numpy import argmax
-from numpy import bincount
-from numpy import ceil
-from numpy import int
+from numpy import sum, append, delete, sort,argpartition, argmax, bincount, ceil, int
 
 def get_majority_vote(knns):
 
